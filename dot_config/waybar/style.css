@@ -1,0 +1,109 @@
+/* Colors */
+@define-color black #000000;
+@define-color white #EDEDED;
+/* @define-color grey #44475A; */
+@define-color grey #505050;
+@define-color warning #FFB23F;
+/* @define-color critical #FF3030; */
+@define-color critical #FF1111;
+
+
+/* Reset all styles */
+* {
+  min-height: 0;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  /* font-family: "TerminessNerdFont"; */
+  /* font-size: 17px; */
+}
+
+
+/* The bar itself */
+window#waybar {
+  background: @black;
+  color: @white;
+  border-bottom: 1px solid @white;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+
+/* Each module */
+#mode,
+#clock,
+#language,
+#idle_inhibitor,
+#cpu,
+#memory,
+#temperature,
+#network,
+#bluetooth,
+#pulseaudio,
+#battery,
+#tray {
+  padding: 0 8px;
+}
+
+
+/* Each module warning */
+#cpu.warning,
+#memory.warning,
+#temperature.warning,
+#battery.warning {
+  background-color: @black;
+  color: @warning;
+  /* I don't know why but the border disappears when the modules change states */
+  border-bottom: 1px solid @white;
+}
+
+
+/* Each module critical */
+#cpu.critical,
+#memory.critical,
+#temperature.critical,
+#network.disconnected,
+#bluetooth.disabled,
+#pulseaudio.muted,
+#battery.critical {
+  background-color: @black;
+  color: @critical;
+  /* I don't know why but the border disappears when the modules change states */
+  border-bottom: 1px solid @white;
+}
+
+
+/* Workspaces stuff */
+button,
+button:hover {
+  min-width: 15px;
+  box-shadow: none;
+  border-bottom: 1px solid @white;
+  font-weight: bold;
+  transition: none;
+  animation: none;
+}
+
+#workspaces button {
+  color: @grey;
+  padding: 0 2px;
+}
+
+#workspaces button:hover {
+  background: @black;
+  color: @white;
+}
+
+#workspaces button.focused {
+  background: @white;
+  color: @black;
+}
+
+#workspaces button.urgent {
+  background: @critical;
+  color: @white;
+}
+
+
+/* Animations */

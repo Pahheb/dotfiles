@@ -1,0 +1,47 @@
+@define-color black #000000;
+@define-color white #EDEDED;
+@define-color grey #0F0F0F;
+
+/* * { */
+/* font-family: "TerminessNerdFont", monospace; */
+/* font-size: 16px; */
+/* } */
+
+#window {
+  border: 2px solid @white;
+  background-color: @black;
+}
+
+#input {
+  margin-bottom: 15px;
+  padding: 0px 5px;
+  border-radius: 0;
+  border: 2px solid @white;
+  background-color: @grey;
+  color: @white;
+}
+
+#inner-box {
+  background-color: @black;
+}
+
+#outer-box {
+  margin: 5px;
+  padding: 15px;
+  background-color: @black;
+}
+
+#text {
+  padding: 5px;
+  color: @white;
+}
+
+#entry:selected {
+  background-color: @white;
+}
+
+#selected #text,
+#selected #img {
+  color: #000000;
+  background-color: @white;
+}

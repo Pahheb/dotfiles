@@ -1,0 +1,160 @@
+// -*- mode: jsonc -*-
+// Global 
+{
+  // "layer": "top", // Makes the logout bar appear below waybar
+  "position": "top",
+  // If the height property was not to be present, it'd be calculated dynamically
+  "height": 30,
+  "modules-left": [
+    "sway/workspaces",
+    "sway/mode"
+  ],
+  "modules-center": [
+    // "sway/window",
+    "clock"
+  ],
+  "modules-right": [
+    "sway/language",
+    "idle_inhibitor",
+    "cpu",
+    "memory",
+    "temperature",
+    "network",
+    "bluetooth",
+    "pulseaudio",
+    // "backlight",
+    "battery",
+    "tray"
+  ],
+  // Modules
+  "sway/mode": {
+    "format": "{}",
+    "tooltip": false
+  },
+  "clock": {
+    "interval": 60,
+    "format": "{:%e %b %Y | %H:%M}",
+    "tooltip": true,
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "on-click": "swaymsg exec \\$calendar"
+  },
+  "sway/language": {
+    "format": "{}",
+    "tooltip": true,
+    "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "󰒳",
+      "deactivated": "󰒲"
+    }
+  },
+  "cpu": {
+    "interval": 10,
+    "format": "󰘚",
+    "states": {
+      "warning": 70,
+      "critical": 90
+    },
+    "on-click": "swaymsg exec \\$task_manager",
+    "tooltip": true
+  },
+  "memory": {
+    "interval": 10,
+    "format": "󰍛",
+    "states": {
+      "warning": 70,
+      "critical": 90
+    },
+    "on-click": "swaymsg exec \\$task_manager",
+    "tooltip": true
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "interval": 10,
+    "format": "{icon}",
+    "tooltip-format": "{temperatureC}°C",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
+    "tooltip": true,
+    "on-click": "swaymsg exec \"\\$once \\$term_float watch sensors\""
+  },
+  "network": {
+    "interval": 5,
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰖪",
+    "format-disabled": "󰀝",
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
+    "tooltip-format": "{icon}  {ifname}: {ipaddr}",
+    "tooltip-format-ethernet": "{icon}  {ifname}: {ipaddr}",
+    "tooltip-format-wifi": "{icon}  {ifname} ({essid}): {ipaddr}",
+    "tooltip-format-disconnected": "{icon}  disconnected",
+    "tooltip-format-disabled": "{icon}  disabled",
+    "on-click": "swaymsg exec \\$once \\$term_float nmtui connect"
+  },
+  "bluetooth": {
+    "format": "󰂯",
+    "format-disabled": "󰂲",
+    "tooltip-format": "{}",
+    "on-click": "swaymsg exec \\$bluetooth",
+    "on-click-right": "rfkill toggle bluetooth"
+  },
+  "pulseaudio": {
+    "scroll-step": 5,
+    "format": "{icon}  {volume}%{format_source}",
+    "format-muted": "󰖁 {format_source}",
+    "format-source": "",
+    "format-source-muted": " 󰍭",
+    "format-icons": {
+      "headphone": "󰋋",
+      "headset": "󰋎",
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    },
+    "tooltip-format": "{icon}  {volume}% {format_source}",
+    "on-click": "swaymsg exec \\$pulseaudio",
+    "on-click-middle": "swaymsg exec \\$volume_mute",
+    "on-scroll-up": "swaymsg exec \\$volume_up",
+    "on-scroll-down": "swaymsg exec \\$volume_down"
+  },
+  "battery": {
+    "interval": 10,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format-charging": "󰂄  {capacity}%",
+    "format": "{icon}  {capacity}%",
+    "format-icons": [
+      "󱃍",
+      "󰁺",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
+    "tooltip": true
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  }
+}

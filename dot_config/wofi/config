@@ -1,0 +1,17 @@
+show=drun
+width=38%
+allow_images=true
+allow_markup=true
+term=foot
+hide_scroll=true
+insensitive=true
+location=center
+no_actions=true
+#lines=10
+image_size=17
+line_wrap=word
+layer=overlay
+#display_generic=true
+#always_parse_args=true
+#show_all=true
+#print_command=true

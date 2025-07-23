@@ -1,0 +1,12 @@
+### Main config
+# This is Pahheb's main Sway config.
+# It is based on the default config, but segmented into several files to facilitate modification.
+# Each file has a number prefix to ensure that the config is loaded in a specific order, preventing errors.
+
+# My configs
+include $HOME/.config/sway/config.d/*
+
+# Required Sway configs
+include /etc/sway/config.d/*
+
+# Read `man 5 sway` for a complete reference.

@@ -1,0 +1,9 @@
+### Autostart applications
+
+exec {
+	mako # Notification manager
+	autotiling-rs # Alternate tiling between vertical and horizontal
+	/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 # Required for GUI sudo
+	easyeffects --gapplication-service & # Start easyeffects EQ in the background
+	wlsunset -l 40.4 -L 3.7 # Adjust gamma based on time
+}

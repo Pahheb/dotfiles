@@ -1,0 +1,20 @@
+### Input configuration
+
+# Keyboard
+input type:keyboard {
+    xkb_layout "us,us,ru,es"
+    xkb_variant ",colemak_dh_ortho,,"
+    xkb_options "grp:shifts_toggle"
+}
+
+# Touchpad
+input type:touchpad {
+    dwt enabled # Turn off touchpad while typing
+    tap enabled # Tap to click
+    natural_scroll enabled # Fingers up = page up
+    middle_emulation enabled # 3 Fingers tap = middle click
+    drag_lock disabled # Lifting the finger ends the drag when tap clicking
+}
+
+# You can get the names of your inputs by running: swaymsg -t get_inputs
+# Read `man 5 sway-input` for more information about this section.
