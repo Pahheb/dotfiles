@@ -1,0 +1,37 @@
+@define-color black #000000;
+@define-color white #EDEDED;
+@define-color grey #0F0F0F;
+
+#window {
+  border: 2px solid @white;
+  background-color: @black;
+}
+
+#inner-box {
+  background-color: @black;
+}
+
+#outer-box {
+  margin: 5px;
+  padding: 10px;
+  background-color: @black;
+}
+
+#entry {
+  padding: 12px 8px;
+}
+
+#text {
+  padding: 5px;
+  color: @white;
+}
+
+#entry:selected {
+  background-color: @white;
+}
+
+#selected #text,
+#selected #img {
+  color: #000000;
+  background-color: @white;
+}

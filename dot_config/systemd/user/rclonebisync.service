@@ -1,0 +1,12 @@
+[Unit]
+Description=Sync Google Drive with rclone.
+After=network-online.target
+OnFailure=rclonebisyncfixer.service
+
+[Service]
+ExecStart=rclone bisync "gdrive:" "/home/kostya/gdrive/" --check-access --fast-list --drive-skip-shortcuts --drive-acknowledge-abuse --drive-skip-dangling-shortcuts --resilient --recover --max-lock 2m --conflict-resolve newer
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=default.target  

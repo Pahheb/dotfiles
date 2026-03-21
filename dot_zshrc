@@ -1,0 +1,24 @@
+fastfetch
+
+# Enable Powerlevel10k instant prompt.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+source /usr/share/cachyos-zsh-config/cachyos-config.zsh
+source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+setopt extended_glob
+
+eval "$(zoxide init zsh)"
+
+# pnpm
+export PNPM_HOME="/home/kostya/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# GO applications
+export PATH=$PATH:$(go env GOPATH)/bin   

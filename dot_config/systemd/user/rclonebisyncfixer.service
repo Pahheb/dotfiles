@@ -1,0 +1,9 @@
+[Unit]
+Description=Failure Handler for rclonebisync.
+
+[Service]
+ExecStart=rclone deletefile "/home/kostya/.cache/rclone/bisync/gdrive_..home_kostya_gdrive.lck" 
+ExecStartPost=rclone bisync "gdrive:" "/home/kostya/gdrive/" --resync --check-access --fast-list --drive-skip-shortcuts --drive-acknowledge-abuse --drive-skip-dangling-shortcuts --resilient --recover --max-lock 2m --conflict-resolve newer
+
+[Install]
+WantedBy=default.target
