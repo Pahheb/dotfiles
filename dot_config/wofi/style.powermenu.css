@@ -17,10 +17,6 @@
   background-color: @black;
 }
 
-#entry {
-  padding: 12px 8px;
-}
-
 #text {
   padding: 5px;
   color: @white;

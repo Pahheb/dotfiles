@@ -16,6 +16,7 @@
   "modules-right": [
     "sway/language",
     "idle_inhibitor",
+    "custom/dnd",
     "cpu",
     "memory",
     "temperature",
@@ -23,7 +24,7 @@
     "bluetooth",
     "pulseaudio",
     // "backlight",
-    "battery",
+    "custom/battery",
     "tray"
   ],
   // Modules
@@ -36,7 +37,7 @@
     "format": "{:%e %b %Y | %H:%M}",
     "tooltip": true,
     "tooltip-format": "<tt>{calendar}</tt>",
-    "on-click": "swaymsg exec \\$calendar"
+    "on-click": "swaymsg exec \\$term_float /home/kostya/.config/waybar/scripts/calendar.sh"
   },
   "sway/language": {
     "format": "{}",
@@ -50,6 +51,13 @@
       "deactivated": "󰒲"
     }
   },
+  "custom/dnd": {
+    "exec": "/home/kostya/.config/waybar/scripts/dnd.sh",
+    "return-type": "json",
+    "interval": 10,
+    "tooltip": true,
+    "on-click": "makoctl mode -t do-not-disturb"
+  },
   "cpu": {
     "interval": 10,
     "format": "󰘚",
@@ -57,7 +65,7 @@
       "warning": 70,
       "critical": 90
     },
-    "on-click": "swaymsg exec \\$task_manager",
+    "on-click": "swaymsg exec \\$term_float btop",
     "tooltip": true
   },
   "memory": {
@@ -67,7 +75,7 @@
       "warning": 70,
       "critical": 90
     },
-    "on-click": "swaymsg exec \\$task_manager",
+    "on-click": "swaymsg exec \\$term_float btop",
     "tooltip": true
   },
   "temperature": {
@@ -81,7 +89,7 @@
       ""
     ],
     "tooltip": true,
-    "on-click": "swaymsg exec \"\\$once \\$term_float watch sensors\""
+    "on-click": "swaymsg exec \\$term_float btop"
   },
   "network": {
     "interval": 5,
@@ -101,13 +109,13 @@
     "tooltip-format-wifi": "{icon}  {ifname} ({essid}): {ipaddr}",
     "tooltip-format-disconnected": "{icon}  disconnected",
     "tooltip-format-disabled": "{icon}  disabled",
-    "on-click": "swaymsg exec \\$once \\$term_float nmtui connect"
+    "on-click": "swaymsg exec \\$term_float nmtui"
   },
   "bluetooth": {
     "format": "󰂯",
     "format-disabled": "󰂲",
     "tooltip-format": "{}",
-    "on-click": "swaymsg exec \\$bluetooth",
+    "on-click": "swaymsg exec \\$term_float bluetui",
     "on-click-right": "rfkill toggle bluetooth"
   },
   "pulseaudio": {
@@ -126,32 +134,17 @@
       ]
     },
     "tooltip-format": "{icon}  {volume}% {format_source}",
-    "on-click": "swaymsg exec \\$pulseaudio",
-    "on-click-middle": "swaymsg exec \\$volume_mute",
-    "on-scroll-up": "swaymsg exec \\$volume_up",
-    "on-scroll-down": "swaymsg exec \\$volume_down"
+    "on-click": "swaymsg exec \\$term_float pulsemixer",
+    "on-click-middle": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
   },
-  "battery": {
+  "custom/battery": {
+    "exec": "/home/kostya/.config/waybar/scripts/battery.sh",
+    "return-type": "json",
     "interval": 10,
-    "states": {
-      "warning": 30,
-      "critical": 15
-    },
-    "format-charging": "󰂄  {capacity}%",
-    "format": "{icon}  {capacity}%",
-    "format-icons": [
-      "󱃍",
-      "󰁺",
-      "󰁼",
-      "󰁽",
-      "󰁾",
-      "󰁿",
-      "󰂀",
-      "󰂁",
-      "󰂂",
-      "󰁹"
-    ],
-    "tooltip": true
+    "tooltip": true,
+    "on-click": "/home/kostya/.config/waybar/scripts/battery-profile.sh"
   },
   "tray": {
     "icon-size": 18,

@@ -14,6 +14,9 @@ set $grey1  #505050
 set $grey2  #2E2E2E
 set $red    #FF1111
 
+# Floating windows
+for_window [app_id="foot-float"] floating enable
+
 # Hide titlebar on windows
 default_border pixel 2
 

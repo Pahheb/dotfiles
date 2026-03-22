@@ -1,7 +1,6 @@
 show=dmenu
-width=720
-lines=1
-columns=5
+width=15%
+lines=5
 hide_search=true
 hide_scroll=true
 insensitive=true

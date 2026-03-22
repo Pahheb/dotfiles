@@ -12,3 +12,5 @@ set $term foot
 # Your preferred application launcher
 #set $menu wmenu-run
 set $menu wofi -c $HOME/.config/wofi/config -I
+# Floating terminal
+set $term_float foot --app-id foot-float

@@ -1,15 +1,12 @@
 #!/bin/bash
 
 options="⏻ Shutdown
-󰑙 Restart
-󰤄 Sleep
+󰑙  Restart
+󰤄  Sleep
 ❄ Hibernate
-󰍃 Logout"
+󰍃  Logout"
 
-# Preselect Sleep (3rd entry, 2 right arrows from first)
-(sleep 0.14 && wtype -P Right && wtype -P Right) &
-
-chosen=$(echo -e "$options" | wofi -c "$HOME/.config/wofi/config.powermenu" -C "$HOME/.config/wofi/style.powermenu.css" --dmenu)
+chosen=$(echo -e "$options" | wofi 	-c "$HOME/.config/wofi/config.powermenu" 	-C "$HOME/.config/wofi/style.powermenu.css" 	--dmenu)
 
 case "$chosen" in
 *"Shutdown")
