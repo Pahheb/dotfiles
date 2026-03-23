@@ -1,6 +1,6 @@
 show=dmenu
 width=15%
-lines=5
+lines=4
 hide_search=true
 hide_scroll=true
 insensitive=true
