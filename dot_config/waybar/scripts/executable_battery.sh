@@ -24,6 +24,29 @@ elif [ "$capacity" -le 30 ]; then
 	class="warning"
 fi
 
-tooltip="Status: ${status}\nProfile: ${profile}"
+# Estimated time remaining
+charge_now=$(cat "$BAT/charge_now" 2>/dev/null || echo 0)
+current_now=$(cat "$BAT/current_now" 2>/dev/null || echo 0)
+charge_full=$(cat "$BAT/charge_full" 2>/dev/null || echo 0)
+
+time_str="full"
+if [ "$current_now" -gt 0 ] 2>/dev/null; then
+	if [ "$status" = "Discharging" ]; then
+		hours=$((charge_now * 100 / current_now))
+		h=$((hours / 100))
+		m=$(((hours % 100) * 60 / 100))
+		time_str="${h}h ${m}m"
+	elif [ "$status" = "Charging" ]; then
+		remaining=$((charge_full - charge_now))
+		if [ "$remaining" -gt 0 ]; then
+			hours=$((remaining * 100 / current_now))
+			h=$((hours / 100))
+			m=$(((hours % 100) * 60 / 100))
+			time_str="${h}h ${m}m"
+		fi
+	fi
+fi
+
+tooltip="Status: ${status} (${time_str})\nProfile: ${profile}"
 
 echo "{\"text\": \"${icon}  ${capacity}%\", \"tooltip\": \"${tooltip}\", \"class\": \"${class}\"}"
