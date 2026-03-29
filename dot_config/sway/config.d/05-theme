@@ -9,8 +9,8 @@ set $black  #141200
 # set $grey1  #44475A
 # set $grey2  #282A36
 # set $red    #FF3030
-set $grey1  #4E4A00
-set $grey2  #312400
+set $grey1  #948800
+set $grey2  #494200
 set $red    #FFF200
 
 # Floating windows

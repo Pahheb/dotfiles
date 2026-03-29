@@ -146,13 +146,13 @@
   typeset -g POWERLEVEL9K_PROMPT_ADD_NEWLINE=false
 
   # Connect left prompt lines with these symbols.
-  typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX='%F{#4E4A00}╭─'
-  typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_PREFIX='%F{#4E4A00}├─'
-  typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%F{#4E4A00}╰─'
+  typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX='%F{#948800}╭─'
+  typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_PREFIX='%F{#948800}├─'
+  typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%F{#948800}╰─'
   # Connect right prompt lines with these symbols.
-  typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_SUFFIX='%F{#4E4A00}─╮'
-  typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_SUFFIX='%F{#4E4A00}─┤'
-  typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_SUFFIX='%F{#4E4A00}─╯'
+  typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_SUFFIX='%F{#948800}─╮'
+  typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_SUFFIX='%F{#948800}─┤'
+  typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_SUFFIX='%F{#948800}─╯'
 
   # The left end of left prompt.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_FIRST_SEGMENT_START_SYMBOL=' '
@@ -164,7 +164,7 @@
   # POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR=' ' below.
   typeset -g POWERLEVEL9K_SHOW_RULER=false
   typeset -g POWERLEVEL9K_RULER_CHAR='─'        # reasonable alternative: '·'
-  typeset -g POWERLEVEL9K_RULER_FOREGROUND='#4E4A00'
+  typeset -g POWERLEVEL9K_RULER_FOREGROUND='#948800'
 
   # Filler between left and right prompt on the first prompt line. You can set it to '·' or '─'
   # to make it easier to see the alignment between left and right prompt and to separate prompt
@@ -175,7 +175,7 @@
   typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR=' '
   if [[ $POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR != ' ' ]]; then
     # The color of the filler.
-    typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND='#4E4A00'
+    typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND='#948800'
     # Add a space between the end of left prompt and the filler.
     typeset -g POWERLEVEL9K_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL=' '
     # Add a space between the filler and the start of right prompt.
@@ -220,7 +220,7 @@
   # Replace removed segment suffixes with this symbol.
   typeset -g POWERLEVEL9K_SHORTEN_DELIMITER=
   # Color of the shortened directory segments.
-  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND='#CFC400'
   # Color of the anchor directory segments. Anchor segments are never shortened. The first
   # segment is always an anchor.
   typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND='#FFF200'
@@ -321,19 +321,19 @@
   #   # Styling for WORK.
   #   typeset -g POWERLEVEL9K_DIR_WORK_VISUAL_IDENTIFIER_EXPANSION='⭐'
   #   typeset -g POWERLEVEL9K_DIR_WORK_FOREGROUND='#FFE600'
-  #   typeset -g POWERLEVEL9K_DIR_WORK_SHORTENED_FOREGROUND='#A09400'
+  #   typeset -g POWERLEVEL9K_DIR_WORK_SHORTENED_FOREGROUND='#B5A900'
   #   typeset -g POWERLEVEL9K_DIR_WORK_ANCHOR_FOREGROUND='#FFF200'
   #
   #   # Styling for WORK_NOT_WRITABLE.
   #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_VISUAL_IDENTIFIER_EXPANSION='⭐'
   #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_FOREGROUND='#FFE600'
-  #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_SHORTENED_FOREGROUND='#A09400'
+  #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_SHORTENED_FOREGROUND='#B5A900'
   #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_ANCHOR_FOREGROUND='#FFF200'
   #
   #   # Styling for WORK_NON_EXISTENT.
   #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_VISUAL_IDENTIFIER_EXPANSION='⭐'
   #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_FOREGROUND='#FFE600'
-  #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_SHORTENED_FOREGROUND='#A09400'
+  #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_SHORTENED_FOREGROUND='#B5A900'
   #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_ANCHOR_FOREGROUND='#FFF200'
   #
   # If a styling parameter isn't explicitly defined for some class, it falls back to the classless
@@ -380,11 +380,11 @@
       local conflicted='%F{#FFF200}'  # red foreground
     else
       # Styling for incomplete and stale Git status.
-      local       meta='%F{#4E4A00}'  # grey foreground
-      local      clean='%F{#4E4A00}'  # grey foreground
-      local   modified='%F{#4E4A00}'  # grey foreground
-      local  untracked='%F{#4E4A00}'  # grey foreground
-      local conflicted='%F{#4E4A00}'  # grey foreground
+      local       meta='%F{#948800}'  # grey foreground
+      local      clean='%F{#948800}'  # grey foreground
+      local   modified='%F{#948800}'  # grey foreground
+      local  untracked='%F{#948800}'  # grey foreground
+      local conflicted='%F{#948800}'  # grey foreground
     fi
 
     local res
@@ -491,7 +491,7 @@
 
   # Icon color.
   typeset -g POWERLEVEL9K_VCS_VISUAL_IDENTIFIER_COLOR='#FFE600'
-  typeset -g POWERLEVEL9K_VCS_LOADING_VISUAL_IDENTIFIER_COLOR='#A09400'
+  typeset -g POWERLEVEL9K_VCS_LOADING_VISUAL_IDENTIFIER_COLOR='#B5A900'
   # Custom icon.
   # typeset -g POWERLEVEL9K_VCS_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # Custom prefix.
@@ -550,7 +550,7 @@
   # Show this many fractional digits. Zero means round to seconds.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION=0
   # Execution time color.
-  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='#CFC400'
   # Duration format: 1d 2h 3m 4s.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FORMAT='d h m s'
   # Custom icon.
@@ -575,7 +575,7 @@
   ###############[ asdf: asdf version manager (https://github.com/asdf-vm/asdf) ]###############
   # Default asdf color. Only used to display tools for which there is no color override (see below).
   # Tip:  Override this parameter for ${TOOL} with POWERLEVEL9K_ASDF_${TOOL}_FOREGROUND.
-  typeset -g POWERLEVEL9K_ASDF_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_ASDF_FOREGROUND='#CFC400'
 
   # There are four parameters that can be used to hide asdf tools. Each parameter describes
   # conditions under which a tool gets hidden. Parameters can hide tools but not unhide them. If at
@@ -633,17 +633,17 @@
   typeset -g POWERLEVEL9K_ASDF_SHOW_ON_UPGLOB=
 
   # Ruby version from asdf.
-  typeset -g POWERLEVEL9K_ASDF_RUBY_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_ASDF_RUBY_FOREGROUND='#B5A900'
   # typeset -g POWERLEVEL9K_ASDF_RUBY_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_RUBY_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # Python version from asdf.
-  typeset -g POWERLEVEL9K_ASDF_PYTHON_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_ASDF_PYTHON_FOREGROUND='#CFC400'
   # typeset -g POWERLEVEL9K_ASDF_PYTHON_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_PYTHON_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # Go version from asdf.
-  typeset -g POWERLEVEL9K_ASDF_GOLANG_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_ASDF_GOLANG_FOREGROUND='#CFC400'
   # typeset -g POWERLEVEL9K_ASDF_GOLANG_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_GOLANG_SHOW_ON_UPGLOB='*.foo|*.bar'
 
@@ -653,42 +653,42 @@
   # typeset -g POWERLEVEL9K_ASDF_NODEJS_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # Rust version from asdf.
-  typeset -g POWERLEVEL9K_ASDF_RUST_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_ASDF_RUST_FOREGROUND='#CFC400'
   # typeset -g POWERLEVEL9K_ASDF_RUST_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_RUST_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # .NET Core version from asdf.
-  typeset -g POWERLEVEL9K_ASDF_DOTNET_CORE_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_ASDF_DOTNET_CORE_FOREGROUND='#B5A900'
   # typeset -g POWERLEVEL9K_ASDF_DOTNET_CORE_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_DOTNET_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # Flutter version from asdf.
-  typeset -g POWERLEVEL9K_ASDF_FLUTTER_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_ASDF_FLUTTER_FOREGROUND='#CFC400'
   # typeset -g POWERLEVEL9K_ASDF_FLUTTER_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_FLUTTER_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # Lua version from asdf.
-  typeset -g POWERLEVEL9K_ASDF_LUA_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_ASDF_LUA_FOREGROUND='#CFC400'
   # typeset -g POWERLEVEL9K_ASDF_LUA_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_LUA_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # Java version from asdf.
-  typeset -g POWERLEVEL9K_ASDF_JAVA_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_ASDF_JAVA_FOREGROUND='#CFC400'
   # typeset -g POWERLEVEL9K_ASDF_JAVA_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_JAVA_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # Perl version from asdf.
-  typeset -g POWERLEVEL9K_ASDF_PERL_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_ASDF_PERL_FOREGROUND='#CFC400'
   # typeset -g POWERLEVEL9K_ASDF_PERL_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_PERL_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # Erlang version from asdf.
-  typeset -g POWERLEVEL9K_ASDF_ERLANG_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_ASDF_ERLANG_FOREGROUND='#B5A900'
   # typeset -g POWERLEVEL9K_ASDF_ERLANG_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_ERLANG_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # Elixir version from asdf.
-  typeset -g POWERLEVEL9K_ASDF_ELIXIR_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_ASDF_ELIXIR_FOREGROUND='#B5A900'
   # typeset -g POWERLEVEL9K_ASDF_ELIXIR_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_ELIXIR_SHOW_ON_UPGLOB='*.foo|*.bar'
 
@@ -698,7 +698,7 @@
   # typeset -g POWERLEVEL9K_ASDF_POSTGRES_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # PHP version from asdf.
-  typeset -g POWERLEVEL9K_ASDF_PHP_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_ASDF_PHP_FOREGROUND='#B5A900'
   # typeset -g POWERLEVEL9K_ASDF_PHP_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_PHP_SHOW_ON_UPGLOB='*.foo|*.bar'
 
@@ -729,25 +729,25 @@
 
   ######################[ nnn: nnn shell (https://github.com/jarun/nnn) ]#######################
   # Nnn shell color.
-  typeset -g POWERLEVEL9K_NNN_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_NNN_FOREGROUND='#CFC400'
   # Custom icon.
   # typeset -g POWERLEVEL9K_NNN_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   ######################[ lf: lf shell (https://github.com/gokcehan/lf) ]#######################
   # lf shell color.
-  typeset -g POWERLEVEL9K_LF_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_LF_FOREGROUND='#CFC400'
   # Custom icon.
   # typeset -g POWERLEVEL9K_LF_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   ##################[ xplr: xplr shell (https://github.com/sayanarijit/xplr) ]##################
   # xplr shell color.
-  typeset -g POWERLEVEL9K_XPLR_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_XPLR_FOREGROUND='#CFC400'
   # Custom icon.
   # typeset -g POWERLEVEL9K_XPLR_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   ###########################[ vim_shell: vim shell indicator (:sh) ]###########################
   # Vim shell indicator color.
-  typeset -g POWERLEVEL9K_VIM_SHELL_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_VIM_SHELL_FOREGROUND='#CFC400'
   # Custom icon.
   # typeset -g POWERLEVEL9K_VIM_SHELL_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -759,7 +759,7 @@
 
   #[ nix_shell: nix shell (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html) ]##
   # Nix shell color.
-  typeset -g POWERLEVEL9K_NIX_SHELL_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_NIX_SHELL_FOREGROUND='#CFC400'
 
   # Display the icon of nix_shell if PATH contains a subdirectory of /nix/store.
   # typeset -g POWERLEVEL9K_NIX_SHELL_INFER_FROM_PATH=false
@@ -772,13 +772,13 @@
 
   ##################[ chezmoi_shell: chezmoi shell (https://www.chezmoi.io/) ]##################
   # chezmoi shell color.
-  typeset -g POWERLEVEL9K_CHEZMOI_SHELL_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_CHEZMOI_SHELL_FOREGROUND='#CFC400'
   # Custom icon.
   # typeset -g POWERLEVEL9K_CHEZMOI_SHELL_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   ##################################[ disk_usage: disk usage ]##################################
   # Colors for different levels of disk usage.
-  typeset -g POWERLEVEL9K_DISK_USAGE_NORMAL_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_DISK_USAGE_NORMAL_FOREGROUND='#CFC400'
   typeset -g POWERLEVEL9K_DISK_USAGE_WARNING_FOREGROUND='#FFF200'
   typeset -g POWERLEVEL9K_DISK_USAGE_CRITICAL_FOREGROUND='#FFF200'
   # Thresholds for different levels of disk usage (percentage points).
@@ -791,13 +791,13 @@
 
   ######################################[ ram: free RAM ]#######################################
   # RAM color.
-  typeset -g POWERLEVEL9K_RAM_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_RAM_FOREGROUND='#CFC400'
   # Custom icon.
   # typeset -g POWERLEVEL9K_RAM_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   #####################################[ swap: used swap ]######################################
   # Swap color.
-  typeset -g POWERLEVEL9K_SWAP_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_SWAP_FOREGROUND='#B5A900'
   # Custom icon.
   # typeset -g POWERLEVEL9K_SWAP_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -805,7 +805,7 @@
   # Show average CPU load over this many last minutes. Valid values are 1, 5 and 15.
   typeset -g POWERLEVEL9K_LOAD_WHICH=5
   # Load color when load is under 50%.
-  typeset -g POWERLEVEL9K_LOAD_NORMAL_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_LOAD_NORMAL_FOREGROUND='#CFC400'
   # Load color when load is between 50% and 70%.
   typeset -g POWERLEVEL9K_LOAD_WARNING_FOREGROUND='#FFF200'
   # Load color when load is over 70%.
@@ -815,7 +815,7 @@
 
   ################[ todo: todo items (https://github.com/todotxt/todo.txt-cli) ]################
   # Todo color.
-  typeset -g POWERLEVEL9K_TODO_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_TODO_FOREGROUND='#CFC400'
   # Hide todo when the total number of tasks is zero.
   typeset -g POWERLEVEL9K_TODO_HIDE_ZERO_TOTAL=true
   # Hide todo when the number of tasks after filtering is zero.
@@ -871,8 +871,8 @@
 
   ######[ per_directory_history: Oh My Zsh per-directory-history local/global indicator ]#######
   # Color when using local/global history.
-  typeset -g POWERLEVEL9K_PER_DIRECTORY_HISTORY_LOCAL_FOREGROUND='#C3B900'
-  typeset -g POWERLEVEL9K_PER_DIRECTORY_HISTORY_GLOBAL_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_PER_DIRECTORY_HISTORY_LOCAL_FOREGROUND='#CFC400'
+  typeset -g POWERLEVEL9K_PER_DIRECTORY_HISTORY_GLOBAL_FOREGROUND='#CFC400'
 
   # Tip: Uncomment the next two lines to hide "local"/"global" text and leave just the icon.
   # typeset -g POWERLEVEL9K_PER_DIRECTORY_HISTORY_LOCAL_CONTENT_EXPANSION=''
@@ -919,7 +919,7 @@
 
   ###[ virtualenv: python virtual environment (https://docs.python.org/3/library/venv.html) ]###
   # Python virtual environment color.
-  typeset -g POWERLEVEL9K_VIRTUALENV_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_VIRTUALENV_FOREGROUND='#CFC400'
   # Don't show Python version next to the virtual environment name.
   typeset -g POWERLEVEL9K_VIRTUALENV_SHOW_PYTHON_VERSION=false
   # If set to "false", won't show virtualenv if pyenv is already shown.
@@ -932,7 +932,7 @@
 
   #####################[ anaconda: conda environment (https://conda.io/) ]######################
   # Anaconda environment color.
-  typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND='#CFC400'
 
   # Anaconda segment format. The following parameters are available within the expansion.
   #
@@ -965,7 +965,7 @@
 
   ################[ pyenv: python environment (https://github.com/pyenv/pyenv) ]################
   # Pyenv color.
-  typeset -g POWERLEVEL9K_PYENV_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_PYENV_FOREGROUND='#CFC400'
   # Hide python version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_PYENV_SOURCES=(shell local global)
   # If set to false, hide python version if it's the same as global:
@@ -991,7 +991,7 @@
 
   ################[ goenv: go environment (https://github.com/syndbg/goenv) ]################
   # Goenv color.
-  typeset -g POWERLEVEL9K_GOENV_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_GOENV_FOREGROUND='#CFC400'
   # Hide go version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_GOENV_SOURCES=(shell local global)
   # If set to false, hide go version if it's the same as global:
@@ -1046,7 +1046,7 @@
 
   #######################[ go_version: go version (https://golang.org) ]########################
   # Go version color.
-  typeset -g POWERLEVEL9K_GO_VERSION_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_GO_VERSION_FOREGROUND='#CFC400'
   # Show go version only when in a go project subdirectory.
   typeset -g POWERLEVEL9K_GO_VERSION_PROJECT_ONLY=true
   # Custom icon.
@@ -1054,7 +1054,7 @@
 
   #################[ rust_version: rustc version (https://www.rust-lang.org) ]##################
   # Rust version color.
-  typeset -g POWERLEVEL9K_RUST_VERSION_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_RUST_VERSION_FOREGROUND='#CFC400'
   # Show rust version only when in a rust project subdirectory.
   typeset -g POWERLEVEL9K_RUST_VERSION_PROJECT_ONLY=true
   # Custom icon.
@@ -1062,7 +1062,7 @@
 
   ###############[ dotnet_version: .NET version (https://dotnet.microsoft.com) ]################
   # .NET version color.
-  typeset -g POWERLEVEL9K_DOTNET_VERSION_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_DOTNET_VERSION_FOREGROUND='#B5A900'
   # Show .NET version only when in a .NET project subdirectory.
   typeset -g POWERLEVEL9K_DOTNET_VERSION_PROJECT_ONLY=true
   # Custom icon.
@@ -1070,7 +1070,7 @@
 
   #####################[ php_version: php version (https://www.php.net/) ]######################
   # PHP version color.
-  typeset -g POWERLEVEL9K_PHP_VERSION_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_PHP_VERSION_FOREGROUND='#B5A900'
   # Show PHP version only when in a PHP project subdirectory.
   typeset -g POWERLEVEL9K_PHP_VERSION_PROJECT_ONLY=true
   # Custom icon.
@@ -1084,7 +1084,7 @@
 
   ####################[ java_version: java version (https://www.java.com/) ]####################
   # Java version color.
-  typeset -g POWERLEVEL9K_JAVA_VERSION_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_JAVA_VERSION_FOREGROUND='#CFC400'
   # Show java version only when in a java project subdirectory.
   typeset -g POWERLEVEL9K_JAVA_VERSION_PROJECT_ONLY=true
   # Show brief version.
@@ -1094,7 +1094,7 @@
 
   ###[ package: name@version from package.json (https://docs.npmjs.com/files/package.json) ]####
   # Package color.
-  typeset -g POWERLEVEL9K_PACKAGE_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_PACKAGE_FOREGROUND='#B5A900'
   # Package format. The following parameters are available within the expansion.
   #
   # - P9K_PACKAGE_NAME     The value of `name` field in package.json.
@@ -1106,7 +1106,7 @@
 
   #############[ rbenv: ruby version from rbenv (https://github.com/rbenv/rbenv) ]##############
   # Rbenv color.
-  typeset -g POWERLEVEL9K_RBENV_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_RBENV_FOREGROUND='#B5A900'
   # Hide ruby version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_RBENV_SOURCES=(shell local global)
   # If set to false, hide ruby version if it's the same as global:
@@ -1119,7 +1119,7 @@
 
   #######################[ rvm: ruby version from rvm (https://rvm.io) ]########################
   # Rvm color.
-  typeset -g POWERLEVEL9K_RVM_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_RVM_FOREGROUND='#B5A900'
   # Don't show @gemset at the end.
   typeset -g POWERLEVEL9K_RVM_SHOW_GEMSET=false
   # Don't show ruby- at the front.
@@ -1129,13 +1129,13 @@
 
   ###########[ fvm: flutter version management (https://github.com/leoafarias/fvm) ]############
   # Fvm color.
-  typeset -g POWERLEVEL9K_FVM_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_FVM_FOREGROUND='#CFC400'
   # Custom icon.
   # typeset -g POWERLEVEL9K_FVM_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   ##########[ luaenv: lua version from luaenv (https://github.com/cehoffman/luaenv) ]###########
   # Lua color.
-  typeset -g POWERLEVEL9K_LUAENV_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_LUAENV_FOREGROUND='#CFC400'
   # Hide lua version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_LUAENV_SOURCES=(shell local global)
   # If set to false, hide lua version if it's the same as global:
@@ -1148,7 +1148,7 @@
 
   ###############[ jenv: java version from jenv (https://github.com/jenv/jenv) ]################
   # Java color.
-  typeset -g POWERLEVEL9K_JENV_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_JENV_FOREGROUND='#CFC400'
   # Hide java version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_JENV_SOURCES=(shell local global)
   # If set to false, hide java version if it's the same as global:
@@ -1161,7 +1161,7 @@
 
   ###########[ plenv: perl version from plenv (https://github.com/tokuhirom/plenv) ]############
   # Perl color.
-  typeset -g POWERLEVEL9K_PLENV_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_PLENV_FOREGROUND='#CFC400'
   # Hide perl version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_PLENV_SOURCES=(shell local global)
   # If set to false, hide perl version if it's the same as global:
@@ -1174,7 +1174,7 @@
 
   ###########[ perlbrew: perl version from perlbrew (https://github.com/gugod/App-perlbrew) ]############
   # Perlbrew color.
-  typeset -g POWERLEVEL9K_PERLBREW_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_PERLBREW_FOREGROUND='#CFC400'
   # Show perlbrew version only when in a perl project subdirectory.
   typeset -g POWERLEVEL9K_PERLBREW_PROJECT_ONLY=true
   # Don't show "perl-" at the front.
@@ -1184,7 +1184,7 @@
 
   ############[ phpenv: php version from phpenv (https://github.com/phpenv/phpenv) ]############
   # PHP color.
-  typeset -g POWERLEVEL9K_PHPENV_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_PHPENV_FOREGROUND='#B5A900'
   # Hide php version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_PHPENV_SOURCES=(shell local global)
   # If set to false, hide php version if it's the same as global:
@@ -1257,7 +1257,7 @@
       # '*prod*'  PROD    # These values are examples that are unlikely
       # '*test*'  TEST    # to match your needs. Customize them as needed.
       '*'       DEFAULT)
-  typeset -g POWERLEVEL9K_KUBECONTEXT_DEFAULT_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_KUBECONTEXT_DEFAULT_FOREGROUND='#B5A900'
   # typeset -g POWERLEVEL9K_KUBECONTEXT_DEFAULT_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   # Use POWERLEVEL9K_KUBECONTEXT_CONTENT_EXPANSION to specify the content displayed by kubecontext
@@ -1339,12 +1339,12 @@
       # '*prod*'  PROD    # These values are examples that are unlikely
       # '*test*'  TEST    # to match your needs. Customize them as needed.
       '*'         OTHER)
-  typeset -g POWERLEVEL9K_TERRAFORM_OTHER_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_TERRAFORM_OTHER_FOREGROUND='#CFC400'
   # typeset -g POWERLEVEL9K_TERRAFORM_OTHER_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   #############[ terraform_version: terraform version (https://www.terraform.io) ]##############
   # Terraform version color.
-  typeset -g POWERLEVEL9K_TERRAFORM_VERSION_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_TERRAFORM_VERSION_FOREGROUND='#CFC400'
   # Custom icon.
   # typeset -g POWERLEVEL9K_TERRAFORM_VERSION_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -1429,7 +1429,7 @@
       '*'         OTHER)
 
   # Azure account name color.
-  typeset -g POWERLEVEL9K_AZURE_OTHER_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_AZURE_OTHER_FOREGROUND='#CFC400'
   # Custom icon.
   # typeset -g POWERLEVEL9K_AZURE_OTHER_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -1438,7 +1438,7 @@
   # Tip: Remove the next line to always show gcloud.
   typeset -g POWERLEVEL9K_GCLOUD_SHOW_ON_COMMAND='gcloud|gcs|gsutil'
    # Google cloud color.
-  typeset -g POWERLEVEL9K_GCLOUD_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_GCLOUD_FOREGROUND='#CFC400'
 
   # Google cloud format. Change the value of POWERLEVEL9K_GCLOUD_PARTIAL_CONTENT_EXPANSION and/or
   # POWERLEVEL9K_GCLOUD_COMPLETE_CONTENT_EXPANSION if the default is too verbose or not informative
@@ -1509,7 +1509,7 @@
       # '*:*prod*:*'  PROD    # These values are examples that are unlikely
       # '*:*test*:*'  TEST    # to match your needs. Customize them as needed.
       '*'             DEFAULT)
-  typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_DEFAULT_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_DEFAULT_FOREGROUND='#CFC400'
   # typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_DEFAULT_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   # Use POWERLEVEL9K_GOOGLE_APP_CRED_CONTENT_EXPANSION to specify the content displayed by
@@ -1540,13 +1540,13 @@
 
   ###############################[ public_ip: public IP address ]###############################
   # Public IP color.
-  typeset -g POWERLEVEL9K_PUBLIC_IP_FOREGROUND='#A09400'
+  typeset -g POWERLEVEL9K_PUBLIC_IP_FOREGROUND='#B5A900'
   # Custom icon.
   # typeset -g POWERLEVEL9K_PUBLIC_IP_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   ########################[ vpn_ip: virtual private network indicator ]#########################
   # VPN IP color.
-  typeset -g POWERLEVEL9K_VPN_IP_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_VPN_IP_FOREGROUND='#CFC400'
   # When on VPN, show just an icon without the IP address.
   # Tip: To display the private IP address when on VPN, remove the next line.
   typeset -g POWERLEVEL9K_VPN_IP_CONTENT_EXPANSION=
@@ -1562,7 +1562,7 @@
 
   ###########[ ip: ip address and bandwidth usage for a specified network interface ]###########
   # IP color.
-  typeset -g POWERLEVEL9K_IP_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_IP_FOREGROUND='#CFC400'
   # The following parameters are accessible within the expansion:
   #
   #   Parameter             | Meaning
@@ -1584,7 +1584,7 @@
 
   #########################[ proxy: system-wide http/https/ftp proxy ]##########################
   # Proxy color.
-  typeset -g POWERLEVEL9K_PROXY_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_PROXY_FOREGROUND='#CFC400'
   # Custom icon.
   # typeset -g POWERLEVEL9K_PROXY_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -1603,7 +1603,7 @@
 
   #####################################[ wifi: wifi speed ]#####################################
   # WiFi color.
-  typeset -g POWERLEVEL9K_WIFI_FOREGROUND='#C3B900'
+  typeset -g POWERLEVEL9K_WIFI_FOREGROUND='#CFC400'
   # Custom icon.
   # typeset -g POWERLEVEL9K_WIFI_VISUAL_IDENTIFIER_EXPANSION='⭐'
 

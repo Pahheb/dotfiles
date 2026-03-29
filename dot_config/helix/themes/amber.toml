@@ -92,15 +92,15 @@ punctuation = "mid"
 # Diagnostics (intensity only)
 # =========================
 
-warning = "mid"
-error = "mid"
-info = "dim"
-hint = "dim"
+warning = "dim"
+error = "dim"
+info = "very_dim"
+hint = "very_dim"
 
-"diagnostic.warning" = { underline = { color = "mid", style = "curl" } }
-"diagnostic.error" = { underline = { color = "mid", style = "curl" } }
-"diagnostic.info" = { underline = { color = "dim", style = "curl" } }
-"diagnostic.hint" = { underline = { color = "dim", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "dim", style = "curl" } }
+"diagnostic.error" = { underline = { color = "dim", style = "curl" } }
+"diagnostic.info" = { underline = { color = "very_dim", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "very_dim", style = "curl" } }
 
 # =========================
 # Palette
@@ -114,5 +114,5 @@ bright = "#FFF200"
 base = "#FFE600"
 mid = "#C3B900"
 dim = "#A09400"
-very_dim = "#4E4A00"
-ultra_dim = "#1C1B00"
+very_dim = "#948800"
+ultra_dim = "#807500"
