@@ -7,11 +7,6 @@
 /* Pattern */
 @define-color test #2dc71f;
 
-/* * { */
-/* font-family: UbuntuMono; */
-/* font-size: 13px; */
-/* } */
-
 #window {
   background-color: @base2;
   border: 2px solid @highlight;

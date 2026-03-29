@@ -1,9 +1,9 @@
 #!/bin/bash
 
 options="⏻ Shutdown
-󰑙  Restart
-󰤄  Sleep
-󰍃  Logout"
+󰑙 Restart
+󰤄 Sleep
+󰍃 Logout"
 # ❄ Hibernate (disabled due to zram)
 
 chosen=$(echo -e "$options" | wofi 	-c "$HOME/.config/wofi/config.powermenu" 	-C "$HOME/.config/wofi/style.powermenu.css" 	--dmenu)

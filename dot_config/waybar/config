@@ -104,11 +104,11 @@
       "󰤥",
       "󰤨"
     ],
-    "tooltip-format": "{icon}  {ifname}: {ipaddr}",
-    "tooltip-format-ethernet": "{icon}  {ifname}: {ipaddr}",
-    "tooltip-format-wifi": "{icon}  {ifname} ({essid}): {ipaddr}",
-    "tooltip-format-disconnected": "{icon}  disconnected",
-    "tooltip-format-disabled": "{icon}  disabled",
+    "tooltip-format": "{icon} {ifname}: {ipaddr}",
+    "tooltip-format-ethernet": "{icon} {ifname}: {ipaddr}",
+    "tooltip-format-wifi": "{icon} {ifname} ({essid}): {ipaddr}",
+    "tooltip-format-disconnected": "{icon} disconnected",
+    "tooltip-format-disabled": "{icon} disabled",
     "on-click": "swaymsg exec \\$term_float nmtui"
   },
   "bluetooth": {
@@ -120,7 +120,7 @@
   },
   "pulseaudio": {
     "scroll-step": 5,
-    "format": "{icon}  {volume}%{format_source}",
+    "format": "{icon} {volume}%{format_source}",
     "format-muted": "󰖁 {format_source}",
     "format-source": "",
     "format-source-muted": " 󰍭",

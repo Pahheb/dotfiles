@@ -1,7 +1,7 @@
 ### Theme
 
 # Font
-#font TerminessNerdFont 14
+font pango:JetBrains Mono 11
 
 # Colors
 set $white1 #EDEDED

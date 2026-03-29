@@ -49,4 +49,4 @@ fi
 
 tooltip="Status: ${status} (${time_str})\nProfile: ${profile}"
 
-echo "{\"text\": \"${icon}  ${capacity}%\", \"tooltip\": \"${tooltip}\", \"class\": \"${class}\"}"
+echo "{\"text\": \"${icon} ${capacity}%\", \"tooltip\": \"${tooltip}\", \"class\": \"${class}\"}"

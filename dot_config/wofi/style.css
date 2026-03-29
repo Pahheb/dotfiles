@@ -2,10 +2,9 @@
 @define-color white #EDEDED;
 @define-color grey #0F0F0F;
 
-/* * { */
-/* font-family: "TerminessNerdFont", monospace; */
-/* font-size: 16px; */
-/* } */
+* {
+  font-family: "Jetbrains Mono";
+}
 
 #window {
   border: 2px solid @white;
