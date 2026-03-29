@@ -1,11 +1,11 @@
 /* Colors */
-@define-color white #FFFF00;
-@define-color black #141300;
+@define-color white #FFE600;
+@define-color black #141200;
 /* @define-color grey #44475A; */
-@define-color grey #4E4E00;
-@define-color warning #FFFE00;
+@define-color grey #4E4A00;
+@define-color warning #FFE600;
 /* @define-color critical #FF3030; */
-@define-color critical #FFFE00;
+@define-color critical #FFF200;
 
 
 /* Reset all styles */

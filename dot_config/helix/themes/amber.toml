@@ -108,11 +108,11 @@ hint = "dim"
 
 [palette]
 
-background = "#141300"
+background = "#141200"
 
-bright = "#FFFE00"
-base = "#FFFF00"
-mid = "#C3C200"
-dim = "#A09E00"
-very_dim = "#4E4E00"
-ultra_dim = "#1C1C00"
+bright = "#FFF200"
+base = "#FFE600"
+mid = "#C3B900"
+dim = "#A09400"
+very_dim = "#4E4A00"
+ultra_dim = "#1C1B00"

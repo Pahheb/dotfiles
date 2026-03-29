@@ -4,14 +4,14 @@
 font pango:JetBrains Mono 11
 
 # Colors
-set $white1 #FFFF00
-set $black  #141300
+set $white1 #FFE600
+set $black  #141200
 # set $grey1  #44475A
 # set $grey2  #282A36
 # set $red    #FF3030
-set $grey1  #4E4E00
-set $grey2  #1C1C00
-set $red    #FFFE00
+set $grey1  #4E4A00
+set $grey2  #312400
+set $red    #FFF200
 
 # Floating windows
 for_window [app_id="foot-float"] floating enable
