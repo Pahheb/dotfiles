@@ -18,14 +18,14 @@ output eDP-1 subpixel rgb
 
 # Wallpaper
 #output * bg /path/to/wallpaper.png fill
-output * bg #140E00 solid_color
+output * bg #141300 solid_color
 
 # Idle configuration
 exec swayidle -w \
          timeout 180 'brightnessctl -s s 0%' resume 'brightnessctl -r' \
-         timeout 240 'swaylock -f -c 140e00 && swaymsg "output * power off"' \
+         timeout 240 'swaylock -f -c 1c1c00 && swaymsg "output * power off"' \
          resume 'swaymsg "output * power on"' \
-         before-sleep 'swaylock -f -c 140e00'
+         before-sleep 'swaylock -f -c 1c1c00'
 
 # This will dim the screen after 180 seconds of inactivity, then lock your
 # screen and turn off your displays after another 60 seconds, and turn
