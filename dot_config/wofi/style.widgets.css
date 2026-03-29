@@ -1,37 +1,28 @@
-@define-color highlight #EDEDED;
-@define-color text_color #EDEDED;
-@define-color base1 #000000;
-@define-color base2 #000000;
-/* Background near borders */
-@define-color base3 #000000;
-/* Pattern */
-@define-color test #2dc71f;
-
 #window {
-  background-color: @base2;
-  border: 2px solid @highlight;
+  background-color: @black;
+  border: 2px solid @white;
   border-radius: 10px;
 }
 
 #inner-box {
-  background-color: @base2;
+  background-color: @black;
 }
 
 #input {
-  background-color: white;
+  background-color: @white;
   margin-top: -200px;
 }
 
 #outer-box {
   margin: 5px;
   padding: 10px;
-  background-color: @base2;
+  background-color: @black;
 }
 
 #text {
   padding: 5px;
   padding-right: 0;
-  color: @text_color;
+  color: @white;
 }
 
 
@@ -45,18 +36,18 @@
 #unselected {}
 
 #unselected {
-  background-color: @base2;
-  color: @text_color;
+  background-color: @black;
+  color: @white;
 }
 
 #entry #selected #text {
-  background-color: @highlight;
-  color: @base2;
+  background-color: @white;
+  color: @black;
 }
 
 #entry:selected {
-  background-color: @highlight;
-  color: @base2;
+  background-color: @white;
+  color: @black;
 }
 
 * {

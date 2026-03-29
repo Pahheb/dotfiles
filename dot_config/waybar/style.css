@@ -1,11 +1,11 @@
 /* Colors */
-@define-color black #000000;
-@define-color white #EDEDED;
+@define-color white #FFB700;
+@define-color black #140E00;
 /* @define-color grey #44475A; */
-@define-color grey #505050;
+@define-color grey #563E00;
 @define-color warning #FFB23F;
 /* @define-color critical #FF3030; */
-@define-color critical #FF1111;
+@define-color critical #FFC400;
 
 
 /* Reset all styles */
@@ -106,5 +106,14 @@ button:hover {
   color: @white;
 }
 
+tooltip {
+  background-color: @black;
+  color: @white;
+  border: 1px solid @white;
+}
+
+tooltip label {
+  color: @white;
+}
 
 /* Animations */

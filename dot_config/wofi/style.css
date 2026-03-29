@@ -1,6 +1,6 @@
-@define-color black #000000;
-@define-color white #EDEDED;
-@define-color grey #0F0F0F;
+@define-color white #FFB700;
+@define-color black #140E00;
+@define-color grey #312400;
 
 * {
   font-family: "Jetbrains Mono";
@@ -16,6 +16,8 @@
   padding: 0px 5px;
   border-radius: 0;
   border: 2px solid @white;
+  outline: none;
+  box-shadow: none;
   background-color: @grey;
   color: @white;
 }
@@ -41,6 +43,6 @@
 
 #selected #text,
 #selected #img {
-  color: #000000;
+  color: @black;
   background-color: @white;
 }
