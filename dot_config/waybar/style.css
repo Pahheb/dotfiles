@@ -1,6 +1,6 @@
 /* Colors */
-@define-color black #000000;
 @define-color white #EDEDED;
+@define-color black #000000;
 /* @define-color grey #44475A; */
 @define-color grey #505050;
 @define-color warning #FFB23F;
@@ -106,5 +106,14 @@ button:hover {
   color: @white;
 }
 
+tooltip {
+  background-color: @black;
+  color: @white;
+  border: 1px solid @white;
+}
+
+tooltip label {
+  color: @white;
+}
 
 /* Animations */

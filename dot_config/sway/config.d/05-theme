@@ -5,7 +5,6 @@ font pango:JetBrains Mono 11
 
 # Colors
 set $white1 #EDEDED
-set $white2 #BFBFBF
 set $black  #000000
 # set $grey1  #44475A
 # set $grey2  #282A36
@@ -24,7 +23,7 @@ default_border pixel 2
 # class                 border  bground text    indicator child_border
 client.focused          $white1 $white1 $black  $white1   $white1
 client.focused_inactive $grey1  $grey1  $black  $grey1    $grey1
-client.unfocused        $grey2  $grey2  $white2 $grey2    $grey2
+client.unfocused        $grey2  $grey2  $white1 $grey2    $grey2
 client.urgent           $red    $red    $black  $red      $red
 client.placeholder      $grey2  $grey2  $black  $grey2    $grey2
 client.background       $black

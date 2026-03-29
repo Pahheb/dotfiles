@@ -1,5 +1,5 @@
-@define-color black #000000;
 @define-color white #EDEDED;
+@define-color black #000000;
 @define-color grey #0F0F0F;
 
 * {
@@ -16,6 +16,8 @@
   padding: 0px 5px;
   border-radius: 0;
   border: 2px solid @white;
+  outline: none;
+  box-shadow: none;
   background-color: @grey;
   color: @white;
 }
@@ -41,6 +43,6 @@
 
 #selected #text,
 #selected #img {
-  color: #000000;
+  color: @black;
   background-color: @white;
 }
