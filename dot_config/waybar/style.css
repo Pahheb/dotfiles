@@ -35,6 +35,7 @@ window#waybar {
 #language,
 #idle_inhibitor,
 #custom-dnd,
+#custom-wlsunset,
 #cpu,
 #memory,
 #temperature,
@@ -72,7 +73,6 @@ window#waybar {
   /* I don't know why but the border disappears when the modules change states */
   border-bottom: 1px solid @white;
 }
-
 
 
 /* Workspaces stuff */
