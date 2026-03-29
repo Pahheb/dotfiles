@@ -1,0 +1,118 @@
+# =========================
+# Syntax
+# =========================
+
+attribute = "bright"
+keyword = "bright"
+"keyword.directive" = "bright"
+namespace = "bright"
+operator = "bright"
+special = "bright"
+
+type = "base"
+"type.builtin" = "base"
+constructor = "bright"
+
+function = "base"
+"function.builtin" = "base"
+"function.macro" = "bright"
+
+variable = "base"
+"variable.other.member" = "base"
+"variable.parameter" = "mid"
+"variable.builtin" = "mid"
+
+constant = "base"
+"constant.builtin" = "base"
+"constant.numeric" = "mid"
+"constant.character.escape" = "bright"
+
+string = "mid"
+label = "bright"
+
+tag = "mid"
+
+comment = "dim"
+
+punctuation = "mid"
+"punctuation.delimiter" = "mid"
+
+# =========================
+# Markup
+# =========================
+
+"markup.heading" = "bright"
+"markup.link.text" = "mid"
+"markup.link.url" = { fg = "mid", modifiers = ["underlined"] }
+"markup.raw" = "mid"
+
+# =========================
+# Diff (still mono!)
+# =========================
+
+"diff.plus" = "bright"
+"diff.minus" = "dim"
+"diff.delta" = "mid"
+
+# =========================
+# UI
+# =========================
+
+"ui.background" = { bg = "background" }
+
+"ui.text" = { fg = "base" }
+"ui.text.focus" = { fg = "bright" }
+"ui.text.inactive" = { fg = "dim" }
+
+"ui.linenr" = { fg = "very_dim" }
+"ui.linenr.selected" = { fg = "mid" }
+
+"ui.statusline" = { fg = "base", bg = "ultra_dim" }
+"ui.statusline.inactive" = { fg = "dim", bg = "ultra_dim" }
+
+"ui.popup" = { bg = "ultra_dim" }
+"ui.menu" = { fg = "base", bg = "ultra_dim" }
+"ui.menu.selected" = { fg = "ultra_dim", bg = "base" }
+
+"ui.selection" = { bg = "very_dim" }
+"ui.selection.primary" = { bg = "very_dim" }
+
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.insert" = { bg = "bright" }
+"ui.cursor.select" = { bg = "mid" }
+
+"ui.cursorline.primary" = { bg = "ultra_dim" }
+
+"ui.virtual" = { fg = "very_dim" }
+"ui.virtual.indent-guide" = { fg = "ultra_dim" }
+
+"ui.window" = { fg = "ultra_dim" }
+
+# =========================
+# Diagnostics (intensity only)
+# =========================
+
+warning = "mid"
+error = "mid"
+info = "dim"
+hint = "dim"
+
+"diagnostic.warning" = { underline = { color = "mid", style = "curl" } }
+"diagnostic.error" = { underline = { color = "mid", style = "curl" } }
+"diagnostic.info" = { underline = { color = "dim", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "dim", style = "curl" } }
+
+# =========================
+# Palette
+# =========================
+
+[palette]
+
+background = "#140E00"
+
+bright = "#FFC400"
+base = "#FFB700"
+mid = "#C38C00"
+dim = "#A07200"
+very_dim = "#4E3800"
+ultra_dim = "#1C1400"
