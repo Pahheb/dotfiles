@@ -9,9 +9,9 @@ set $black  #141200
 # set $grey1  #44475A
 # set $grey2  #282A36
 # set $red    #FF3030
-set $grey1  #948800
-set $grey2  #494200
-set $red    #FFF200
+set $grey1  #97700A
+set $grey2  #6A4B0C
+set $red    #FFF09A
 
 # Floating windows
 for_window [app_id="foot-float"] floating enable

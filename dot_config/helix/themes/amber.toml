@@ -110,9 +110,9 @@ hint = "very_dim"
 
 background = "#141200"
 
-bright = "#FFF200"
+bright = "#FFF09A"
 base = "#FFE600"
-mid = "#C3B900"
-dim = "#A09400"
+mid = "#D7B300"
+dim = "#97700A"
 very_dim = "#948800"
-ultra_dim = "#807500"
+ultra_dim = "#6A4B0C"
