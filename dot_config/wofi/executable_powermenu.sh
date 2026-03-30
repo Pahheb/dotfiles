@@ -16,7 +16,7 @@ case "$chosen" in
 	systemctl reboot
 	;;
 *"Sleep")
-	swaylock -f -c 000000 && systemctl suspend
+	swaylock -f -c 140E00 && systemctl suspend
 	;;
 # *"Hibernate")
 # 	systemctl hibernate

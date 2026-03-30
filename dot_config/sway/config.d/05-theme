@@ -5,13 +5,13 @@ font pango:JetBrains Mono 11
 
 # Colors
 set $white1 #FFB700
-set $black  #140E00
+set $black  #141200
 # set $grey1  #44475A
 # set $grey2  #282A36
 # set $red    #FF3030
-set $grey1  #563E00
-set $grey2  #312400
-set $red    #FFC400
+set $grey1  #975906
+set $grey2  #6A4B0C
+set $red    #FFBF5F
 
 # Floating windows
 for_window [app_id="foot-float"] floating enable

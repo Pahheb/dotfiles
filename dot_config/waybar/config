@@ -17,6 +17,7 @@
     "sway/language",
     "idle_inhibitor",
     "custom/dnd",
+    "custom/wlsunset",
     "cpu",
     "memory",
     "temperature",
@@ -57,6 +58,13 @@
     "interval": 10,
     "tooltip": true,
     "on-click": "makoctl mode -t do-not-disturb"
+  },
+  "custom/wlsunset": {
+    "exec": "/home/kostya/.config/waybar/scripts/wlsunset.sh",
+    "return-type": "json",
+    "interval": 5,
+    "tooltip": true,
+    "on-click": "/home/kostya/.config/waybar/scripts/wlsunset-toggle.sh"
   },
   "cpu": {
     "interval": 10,
